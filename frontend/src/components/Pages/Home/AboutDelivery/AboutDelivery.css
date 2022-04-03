@@ -1,0 +1,140 @@
+.about-delivery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 117px 30px;
+  box-sizing: border-box;
+
+  box-sizing: border-box;
+}
+
+.about-delivery__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px 16px;
+}
+
+.about-delivery__title {
+  font-family: "alfa_slab_one", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 66px;
+  /* identical to box height */
+  text-align: center;
+  /* Dark */
+  color: #1e1d23;
+  margin: 0;
+}
+
+.about-delivery__seperator {
+  width: 233px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-delivery__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 1320px;
+}
+
+.about-delivery__img {
+  position: relative;
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 2;
+}
+
+.about-delivery__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 2;
+}
+
+.about-delivery__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 24px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.about-delivery__icon {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-delivery__info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px 0;
+}
+
+.about-delivery__info-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  /* Dark */
+  color: #1e1d23;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.about-delivery__info-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+  /* Secondary */
+  color: #4f576a;
+  margin: 0;
+}
+
+@media screen and (max-width: 963px) {
+  .about-delivery__container {
+    flex-direction: column;
+  }
+
+  .about-delivery__img {
+    width: 100%;
+    max-width: 673px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about-delivery__item {
+    flex-direction: column;
+  }
+}

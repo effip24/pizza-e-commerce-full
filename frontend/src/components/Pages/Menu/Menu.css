@@ -1,0 +1,126 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 136px;
+  box-sizing: border-box;
+  gap: 20px 20px;
+}
+
+.menu__top-container {
+  width: 100%;
+  max-width: 1320px;
+  display: flex;
+  align-items: center;
+  gap: 48px 48px;
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+
+.menu__image {
+  width: 100%;
+  max-width: 424px;
+  max-height: 328px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 150px 40px;
+}
+
+.menu__info-container {
+  width: 100%;
+  max-width: 848px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px 24px;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  padding: 48px;
+  box-sizing: border-box;
+}
+
+.menu__title {
+  font-family: "alfa_slab_one", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 64px;
+  /* identical to box height, or 114% */
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__info-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px 24px;
+}
+
+.menu__info-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px 16px;
+}
+
+.menu__info-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.menu__info-icon_type_location {
+  background-image: url("../../../images/location.png");
+}
+.menu__info-icon_type_phone {
+  background-image: url("../../../images/phone.png");
+}
+.menu__info-icon_type_mail {
+  background-image: url("../../../images/main.png");
+}
+
+.menu__info-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+  /* Secondary */
+  color: #4f576a;
+  margin: 0;
+}
+
+.menu__list {
+  width: 100%;
+  max-width: 1320px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 312px);
+  list-style: none;
+  justify-content: center;
+  gap: 30px 15px;
+  margin-top: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 869px) {
+  .menu__top-container {
+    flex-direction: column;
+  }
+
+  .menu__title {
+    align-self: center;
+  }
+}

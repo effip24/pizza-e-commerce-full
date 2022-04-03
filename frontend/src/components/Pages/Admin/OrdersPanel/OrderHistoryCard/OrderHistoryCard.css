@@ -1,0 +1,32 @@
+.table__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 30px;
+  background: #ffa101;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  border: 0;
+  transition: opacity 0.2s linear;
+}
+.table__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.table__button_inactive {
+  background: #e6e8eb;
+  pointer-events: none;
+  color: #b6bcbf;
+}

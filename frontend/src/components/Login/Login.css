@@ -1,0 +1,143 @@
+.login {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.login__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px 0;
+}
+
+.login__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  /* main/primary */
+  color: #1a1b22;
+  margin: 0;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__from-container {
+  width: 100%;
+  max-width: 358px;
+  margin: 0 auto;
+}
+
+.login__input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+  width: 100%;
+}
+
+.login__input {
+  outline: 0;
+  border: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+.popup__input_type_error {
+  border-bottom: 1px solid #ff0000;
+}
+
+.login__input-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login__input-error {
+  visibility: hidden;
+  max-width: 358px;
+  height: 17px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #ff0000;
+}
+.login__input-error_active {
+  visibility: visible;
+}
+
+.login__submit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 43px;
+  gap: 8px 0;
+}
+
+.login__submit {
+  width: 100%;
+  height: 64px;
+  background: #ffa101;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  border-radius: 100px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  /* main/white */
+  color: #ffffff;
+  border: 0;
+  padding: 0;
+}
+.login__submit:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.login__submit_inactive {
+  background: #ffffff;
+  color: #000000;
+  opacity: 0.2;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+.login__error {
+  color: #ff0000;
+}
+
+@media screen and (max-width: 540px) {
+  .login__from-container {
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .login__submit {
+    font-size: 16px;
+  }
+
+  .login__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .login__from-container {
+    max-width: 260px;
+  }
+}

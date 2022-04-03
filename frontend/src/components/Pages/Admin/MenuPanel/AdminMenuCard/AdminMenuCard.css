@@ -1,0 +1,62 @@
+.menu-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 10px;
+}
+
+.menu-card__img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  object-position: center;
+  margin-left: 50px;
+}
+
+.menu-card__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-card__button-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 10px;
+}
+
+.menu-card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: 0;
+  background-color: transparent;
+  transition: opacity 0.2s linear;
+}
+.menu-card__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.menu-card__button_type_edit {
+  border-radius: 50%;
+  background-image: url("../../../../../images/edit.png");
+  cursor: pointer;
+}
+.menu-card__button_type_rm {
+  border-radius: 0;
+  background-image: url("../../../../../images/delete.png");
+  cursor: pointer;
+}
+
+@media screen and (max-width: 968px) {
+  .menu-card__img {
+    margin: 0;
+  }
+}

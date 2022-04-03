@@ -1,0 +1,39 @@
+.header {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: transparent;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.header__container {
+  position: relative;
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.header__logo {
+  width: 36px;
+  height: 37px;
+}
+
+.header__mobile {
+  display: none;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (max-width: 896px) {
+  .header__mobile {
+    display: block;
+  }
+}

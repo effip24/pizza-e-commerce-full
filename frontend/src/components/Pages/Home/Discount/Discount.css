@@ -1,0 +1,219 @@
+.discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 112px 0;
+  background: #fff;
+  padding: 117px 30px;
+  box-sizing: border-box;
+}
+
+.discount__offer-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 26px;
+  width: 100%;
+  max-width: 1320px;
+  background: #f8f2e9;
+  /* Primary */
+  border: 1px dashed #ffa101;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 24px 0;
+  box-sizing: border-box;
+}
+
+.discount__offer-code-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.discount__offer-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.discount__offer-code {
+  font-family: "alfa_slab_one", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+  text-align: center;
+  /* Primary */
+  color: #ffa101;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0;
+}
+
+.discount__offer-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  /* identical to box height, or 160% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* Secondary */
+  color: #4f576a;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0;
+}
+
+.discount__icon-scissors {
+  position: absolute;
+  bottom: -10px;
+  left: 50px;
+}
+
+.discount__icon-scissors-right {
+  position: absolute;
+  top: -7px;
+  right: 50px;
+}
+
+.discount__special-container {
+  width: 100%;
+  max-width: 1320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 23px;
+}
+
+.discount__special {
+  width: 100%;
+  max-width: 648px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px 0;
+  background: #f8f2e9;
+  /* Primary */
+
+  border: 1px dashed #ffa101;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.discount__special-image {
+  width: 100%;
+  max-width: 400px;
+  max-height: 194px;
+  align-self: flex-end;
+  object-fit: cover;
+  object-position: center;
+}
+
+.discount__special-title {
+  font-family: "alfa_slab_one", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  /* Primary */
+  color: #ffa101;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px;
+  margin-left: 40px;
+}
+
+.discount__special-title-bold {
+  color: #1e1d23;
+}
+
+.discount__special-text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 160% */
+  display: flex;
+  align-items: center;
+  /* Secondary */
+  color: #4f576a;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px;
+  margin-left: 40px;
+  margin-bottom: 60px;
+}
+
+.discount__week-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 56px 0;
+}
+
+.discount__week-title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px 0;
+}
+
+.discount__week-title {
+  font-family: "alfa_slab_one", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 66px;
+  /* identical to box height */
+  text-align: center;
+  /* Dark */
+  color: #1e1d23;
+  margin: 0;
+}
+
+.discount__week-cover {
+  width: 233px;
+  height: 20px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.discount__week-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 312px);
+  justify-content: center;
+  gap: 24px 24px;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 720px) {
+  .discount__offer-container {
+    flex-direction: column;
+  }
+
+  .discount__special-container {
+    flex-direction: column;
+    gap: 23px 0;
+  }
+}

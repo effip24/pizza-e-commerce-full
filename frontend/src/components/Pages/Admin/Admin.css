@@ -1,0 +1,30 @@
+.admin {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 150px;
+  box-sizing: border-box;
+}
+
+.admin__panel-container {
+  width: 100%;
+  padding: 30px;
+  max-width: 1700px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 30px 30px;
+}
+
+@media only screen and (min-width: 896px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 987px) {
+  .admin__panel-container {
+    flex-direction: column;
+  }
+}

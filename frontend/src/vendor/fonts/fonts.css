@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("./inter-400-regular.woff") format("woff"), url("./inter-400-regular.woff") format("woff2");
+}
+
+@font-face {
+  font-family: "alfa_slab_one";
+  src: url("alfaslabone-regular-webfont.woff2") format("woff2"), url("alfaslabone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

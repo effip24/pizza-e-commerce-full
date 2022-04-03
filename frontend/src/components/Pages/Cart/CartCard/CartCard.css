@@ -1,0 +1,136 @@
+.cart-card__item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c5c4c6;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.cart-card__item:nth-child(1) {
+  border-top: 1px solid #c5c4c6;
+}
+
+.cart-card__pizza-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px 24px;
+}
+
+.cart-card__pizza-img {
+  width: 81px;
+  height: 80px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cart-card__pizza-name {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+  color: #000000;
+  margin: 0;
+}
+
+.cart-card__right-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.cart-card__price {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+  /* Secondary */
+  color: #4f576a;
+}
+
+.cart-card__amount-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px 13px;
+}
+
+.cart-card__amount-control {
+  object-fit: cover;
+  object-position: center;
+  /* Primary 200 */
+  border: 1px solid #ffdfa9;
+  box-sizing: border-box;
+  border-radius: 99px;
+  transition: opacity 0.2s linear;
+}
+.cart-card__amount-control:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.cart-card__amount-total {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* Secondary */
+  color: #4f576a;
+  margin: 0;
+}
+
+.cart-card__remove {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 0.2s linear;
+}
+.cart-card__remove:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 987px) {
+  .cart-card__right-wrap {
+    gap: 35px;
+  }
+  .cart-card__pizza-info {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cart-card__right-wrap {
+    gap: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  .cart-card__item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .cart-card__pizza-info {
+    align-items: flex-start;
+  }
+  .cart-card__pizza-img {
+    width: 60px;
+    height: 60px;
+  }
+}

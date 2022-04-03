@@ -1,0 +1,179 @@
+.hero {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(43.49deg, rgba(243, 231, 198, 0.2) 34.76%, rgba(251, 206, 255, 0) 67.26%),
+    linear-gradient(39.61deg, rgba(255, 161, 1, 0.07) 1.21%, rgba(255, 161, 1, 0) 82.95%);
+}
+
+.hero__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 97px;
+  padding: 30px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero__info {
+  width: 100%;
+  max-width: 536px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 47px 0;
+}
+
+.hero__bunner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  background: #ffdfa9;
+  border-radius: 10px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
+.hero__delivery-icon {
+  display: block;
+  width: 24px;
+  height: 20px;
+  background-image: url("../../../../images/delivery.png");
+}
+
+.hero__delivery-text {
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  /* identical to box height, or 144% */
+  /* Secondary */
+  color: #4f576a;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.hero__title {
+  font-family: "alfa_slab_one", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 120%;
+  /* or 77px */
+  /* Dark */
+  color: #1e1d23;
+  margin: 0;
+}
+
+.hero__title-bold {
+  font-family: "alfa_slab_one", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 120%;
+  /* or 77px */
+  /* Primary */
+  color: #ffa101;
+}
+
+.hero__text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  /* or 160% */
+  /* Secondary */
+  color: #4f576a;
+  margin: 0;
+}
+
+.hero__downloads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 16px;
+}
+
+.hero__download-btn {
+  width: 200px;
+  height: 59px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  transition: opacity 0.2s linear;
+}
+.hero__download-btn:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.hero__download-btn_type_gplay {
+  background-image: url("../../../../images/gooleplay.png");
+}
+.hero__download-btn_type_apple {
+  background-image: url("../../../../images/applestore.png");
+}
+
+.hero__background-image-wrap {
+  width: 100%;
+  height: 100%;
+  max-width: 988px;
+  border: 2px dashed #ffa101;
+
+  box-sizing: border-box;
+  border-radius: 331.078px 0px 0px 331.078px;
+  border-spacing: 45px;
+
+  overflow: hidden;
+}
+
+.hero__background-image {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  max-width: 645px;
+  max-height: 616px;
+}
+
+@media only screen and (min-width: 896px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .hero__container {
+    flex-direction: column;
+    gap: 45px 0;
+    justify-content: center;
+    padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__title {
+    font-size: 48px;
+  }
+  .hero__title-bold {
+    font-size: 48px;
+  }
+  .hero__info {
+    align-items: center;
+  }
+  .hero__downloads {
+    flex-direction: column;
+    gap: 45px 0;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,7 @@
+.home {
+  position: relative;
+  width: 100%;
+  padding-bottom: 136px;
+  box-sizing: border-box;
+  z-index: 1;
+}
