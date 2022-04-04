@@ -7,6 +7,8 @@ This project is fullstack project, all orders are saved into a database and the 
 
 ![alt-text](https://media.giphy.com/media/52gJzGM5CQ3FzDygU9/giphy.gif)
 
+<img src="https://media.giphy.com/media/52gJzGM5CQ3FzDygU9/giphy.gif" alt="css3" width="450" height="350"/>
+
 #### Technologies and Techniques
 
 <p align="left"> 
