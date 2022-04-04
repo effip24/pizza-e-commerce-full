@@ -5,7 +5,7 @@ This project is fullstack project, all orders are saved into a database and the 
 
 #### Live: https://pizza-effip24.netlify.app/
 
-![alt-text](https://media.giphy.com/media/SMw1pgahzRu3zBS4JB/giphy.gif)
+![alt-text](https://media.giphy.com/media/52gJzGM5CQ3FzDygU9/giphy.gif)
 
 #### Technologies and Techniques
 
