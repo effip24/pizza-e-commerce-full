@@ -25,21 +25,3 @@ This project is fullstack project, all orders are saved into a database and the 
 
   1024, 768, 425, 320
 ```
-
-#### To run the website locally:
-
-```
-  git clone https://github.com/effip24/pizza-e-commerce-frontend.git
-```
-
-```
-  cd pizza-e-commerce-frontend
-```
-
-```
-  npm install
-```
-
-```
-  npm run start
-```
