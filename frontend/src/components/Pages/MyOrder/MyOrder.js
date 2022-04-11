@@ -4,8 +4,14 @@ import Receipt from "../../Receipt/Receipt";
 import NothingFound from "../../NothingFound/NothingFound";
 import { useEffect, useState } from "react";
 
-const MyOrder = ({ customerOrders, onOrderSearch, orderStatus, onStatusCheck }) => {
-  const { values, handleChange, errors, isValid, resetForm, setValues } = useFormAndValidation();
+const MyOrder = ({
+  customerOrders,
+  onOrderSearch,
+  orderStatus,
+  onStatusCheck,
+}) => {
+  const { values, handleChange, errors, isValid, resetForm, setValues } =
+    useFormAndValidation();
   const [orderId, setOrderId] = useState("");
 
   const [isStatusBarOpen, setIsStatusBarOpen] = useState(false);
@@ -66,26 +72,41 @@ const MyOrder = ({ customerOrders, onOrderSearch, orderStatus, onStatusCheck }) 
     <section className="order">
       <div className="order__container">
         <form noValidate className="order__form" onSubmit={handleSubmit}>
-          <input
-            name="phone"
-            required
-            type="number"
-            className="order__input"
-            placeholder="Enter you phone"
-            onChange={handleChange}
-            value={values.phone || ""}
-          ></input>
+          <div className="order__input-wrap">
+            <input
+              name="phone"
+              required
+              pattern="[0-9]{1,10}"
+              className="order__input"
+              placeholder="phone number"
+              onChange={handleChange}
+              value={values.phone || ""}
+            ></input>
+
+            <button
+              className={`order__button ${
+                isValid ? "" : "order__button_inactive"
+              }`}
+              type="submit"
+            >
+              Search
+            </button>
+          </div>
+
           <span className="checkout__input-error">{errors.phone}</span>
-          <button className={`order__button ${isValid ? "" : "order__button_inactive"}`} type="submit">
-            Search
-          </button>
         </form>
 
         {showNothingFound ? (
           <NothingFound showNothingFound={showNothingFound} />
         ) : (
-          <div className={`order__track ${isSearch ? "order__track_show" : ""}`}>
-            <ul className={`order__track-list ${isStatusBarOpen ? "order__track-list_show" : ""}`}>
+          <div
+            className={`order__track ${isSearch ? "order__track_show" : ""}`}
+          >
+            <ul
+              className={`order__track-list ${
+                isStatusBarOpen ? "order__track-list_show" : ""
+              }`}
+            >
               <li className="order__track-item">
                 <div className="order__track-icon-wrap">
                   <i className="order__track-icon order__track-icon_type_payment"></i>
@@ -127,7 +148,11 @@ const MyOrder = ({ customerOrders, onOrderSearch, orderStatus, onStatusCheck }) 
               </li>
             </ul>
             {customerOrders.map((order) => (
-              <Receipt key={order._id} order={order} onSearch={handleOrderSearch} />
+              <Receipt
+                key={order._id}
+                order={order}
+                onSearch={handleOrderSearch}
+              />
             ))}
           </div>
         )}
